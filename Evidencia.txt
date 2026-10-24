@@ -1,0 +1,46 @@
+PRACTICA 11 - NOMINA MENSUAL
+
+String[] meses:
+Se encuentra en Main y contiene los 12 meses del año.
+
+meses[numeroMes - 1]:
+Se utiliza para mostrar el nombre del mes seleccionado sin usar if o switch.
+
+ArrayList<Empleado>:
+Se utiliza para almacenar empleados fijos y empleados por hora en una sola colección.
+
+add():
+Se utiliza al registrar un empleado para agregarlo al ArrayList.
+
+size():
+Se utiliza para mostrar la cantidad de trabajadores registrados.
+
+Recorrido del ArrayList:
+Se realiza con for (Empleado empleado : empleados) en imprimirNomina().
+
+Encapsulamiento:
+Todos los atributos de Empleado, EmpleadoFijo y EmpleadoPorHora son private.
+
+Abstraccion:
+Empleado es una clase abstracta y calcularPago() es un metodo abstracto.
+
+Herencia:
+EmpleadoFijo y EmpleadoPorHora utilizan extends Empleado.
+
+Polimorfismo:
+El ArrayList almacena referencias Empleado y calcularPago() ejecuta el metodo correspondiente de cada clase hija.
+
+Atributo:
+private String nombre; en Empleado.
+
+Parametro:
+String nombre en el constructor de Empleado.
+
+Argumento:
+El valor capturado en nombre se envia al crear new EmpleadoFijo(...) o new EmpleadoPorHora(...).
+
+Variable local:
+double total en imprimirNomina().
+
+Constructor:
+EmpleadoFijo y EmpleadoPorHora reciben sus datos mediante parametros, utilizan this y llaman super(...) para DPI y nombre.
